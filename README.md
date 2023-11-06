@@ -4,4 +4,4 @@ Sample SSR output of asynchronous data in Next.js with extreme ease.
 
 ## DEMO
 
-https://github.com/SoraKumo001/next-ssr-sample
+https://next-use-ssr.vercel.app/
