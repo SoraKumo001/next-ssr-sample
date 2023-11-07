@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from 'react';
 import { NextPage } from 'next';
-import { SSRProvider, useSSR } from 'next-ssr';
+import { useSSR } from 'next-ssr';
 
 const FETCH_WAIT = 50;
 const PAGE_SIZE = 30;
@@ -75,10 +75,6 @@ const NewsList = () => {
 };
 
 const Page: NextPage = () => {
-  return (
-    <SSRProvider>
-      <NewsList />
-    </SSRProvider>
-  );
+  return <NewsList />;
 };
 export default Page;

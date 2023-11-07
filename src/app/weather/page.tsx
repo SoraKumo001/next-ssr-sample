@@ -1,5 +1,5 @@
 'use client';
-import { SSRProvider, useSSR } from 'next-ssr';
+import { useSSR } from 'next-ssr';
 
 export interface WeatherType {
   publishingOffice: string;
@@ -51,14 +51,14 @@ const Weather = ({ code }: { code: number }) => {
 
 const Page = () => {
   return (
-    <SSRProvider>
+    <>
       {/* Chiba  */}
       <Weather code={120000} />
       {/* Tokyo */}
       <Weather code={130000} />
       {/* Kanagawa */}
       <Weather code={140000} />
-    </SSRProvider>
+    </>
   );
 };
 export default Page;

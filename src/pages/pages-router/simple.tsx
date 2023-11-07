@@ -1,5 +1,4 @@
-'use client';
-import { SSRProvider, useSSR } from 'next-ssr';
+import { useSSR } from 'next-ssr';
 
 /**
  * Return time asynchronously
@@ -14,10 +13,6 @@ const Test = () => {
  * Page display components
  */
 const Page = () => {
-  return (
-    <SSRProvider>
-      <Test />
-    </SSRProvider>
-  );
+  return <Test />;
 };
 export default Page;
