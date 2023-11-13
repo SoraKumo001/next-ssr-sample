@@ -3,6 +3,7 @@
 import { Fragment, useState } from 'react';
 import { NextPage } from 'next';
 import { useSSR } from 'next-ssr';
+import React from 'react';
 
 const FETCH_WAIT = 50;
 const PAGE_SIZE = 30;
